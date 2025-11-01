@@ -1,41 +1,59 @@
-# Python Exercises
+# Exercises
+![JavaScript](https://img.shields.io/badge/javascript-ES6-F0DB4F?style=for-the-badge&logo=javascript&logoColor=white)
+![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-This repository contains Python exercises organized into **13 modules**, with each module containing individual tasks.
+This repository contains exercises implemented in **JavaScript** and **Python**, organized into modules with individual tasks.
 
-## Repository Structure
+## JavaScript Exercises
 
-- Each module corresponds to a **Python file** (`module_1.py`, `module_2.py`, etc.).
-- Tasks inside modules are organized as **classes**: `Task_1`, `Task_2`, etc.
-- Each class contains a **static method** `.main()` to execute the corresponding task.
+The exercises for this section are located in the **`JavaScript/`** directory.
 
+### Structure
 
-## Dependencies
+- `index.html` - Main entry point for running exercises.  
+- `scripts/` - Contains modules and shared helper functions:
+    - `Helper.js` - Common utility functions.
+    - `Module_1.js` ... `Module_4.js` - Individual exercise modules.
+- `styles/` - CSS styles for the exercises.  
+- `assets/` - Images and icons used by the exercises.
 
-To run the tasks, you need the following Python libraries:
+### Usage
 
-- `mysql-connector-python`
-- `flask`
-- `requests`
-- `geopy`
+1. Open **`JavaScript/index.html`** in a web browser.  
+2. Use the interface to select and execute tasks from each module.  
+3. View the output area for results.
 
-Install them using `pip`:
+## Python Exercises
+
+The exercises for this section are located in the **`Python/`** directory.
+
+### Structure
+
+- `Module_1.py` ... `Module_13.py` - Individual exercise modules.  
+- Tasks are implemented as **classes** (e.g., `Task_1`, `Task_2`).  
+- Each class provides a **static method** `.main()` to execute the task.
+
+### Dependencies
+
+Install the required Python libraries using `pip`:
 
 ```bash
 pip install mysql-connector-python flask requests geopy
 ```
 
-## Usage
+### Usage
 
-**Example Usage:**
+Import a task class from its module and execute it.
+
+**Example:** Running Task 1 from Module 8:
 
 ```python
-from module_8 import Task_1
+from Python.Module_8 import Task_1
 
-# Run Task 1 from Module 8
 Task_1.main()
 ```
 
-## Notes
+### Notes
 
-- Each task can be executed independently.
-- Replace placeholders for database credentials or API keys before running tasks.
+- Each task can be executed independently.  
+- Replace placeholders for database credentials or API keys where indicated.
