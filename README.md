@@ -8,6 +8,12 @@ This repository contains exercises implemented in **JavaScript** and **Python**,
 
 The exercises for this section are located in the **`JavaScript/`** directory.
 
+### Live Demo
+
+Explore the JavaScript exercises directly on GitHub Pages:
+
+[**Visit the Live Demo**](https://devbytamir.github.io/Exercises)
+
 ### Structure
 
 - `index.html` - Main entry point for running exercises.  
@@ -17,7 +23,7 @@ The exercises for this section are located in the **`JavaScript/`** directory.
 - `styles/` - CSS styles for the exercises.  
 - `assets/` - Images and icons used by the exercises.
 
-### Usage
+### Usage (Local)
 
 1. Open **`JavaScript/index.html`** in a web browser.  
 2. Use the interface to select and execute tasks from each module.  
