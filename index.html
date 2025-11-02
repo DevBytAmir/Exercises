@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Exercises</title>
+        <meta name="description" content="A Collection of JavaScript exercises and modules.">
+        <meta name="author" content="DevBytAmir">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png"> 
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+        <header class="site-header" role="banner">
+            <div class="header-left">
+                <h1>JavaScript Exercises</h1>
+            </div>
+
+            <div class="header-right">
+                <a href="https://github.com/DevBytAmir" 
+                target="_blank" 
+                rel="noopener" 
+                class="github-link" 
+                title="Visit DevBytAmir on GitHub">
+                <img src="assets/github-mark-white.png" alt="GitHub logo">
+                <span class="username">@DevBytAmir</span>
+                </a>
+            </div>
+        </header>
+
+        <main class="main-container" role="main">
+            <nav class="modules-column" aria-label="JavaScript Modules">
+                <h2>Module 1<span class="arrow">▶</span></h2>
+                <div class="module-buttons">
+                    <button type="button" onclick="module1.task1()">Task 1: Print to Console</button>
+                    <button type="button" onclick="module1.task2()">Task 2: Greet User</button>
+                    <button type="button" onclick="module1.task3()">Task 3: Sum, Product, Average</button>
+                    <button type="button" onclick="module1.task4()">Task 4: Sorting Hat</button>
+                    <button type="button" onclick="module1.task5()">Task 5: Leap Year</button>
+                    <button type="button" onclick="module1.task6()">Task 6: Square Root</button>
+                    <button type="button" onclick="module1.task7()">Task 7: Dice Roll Sum</button>
+                    <button type="button" onclick="module1.task8()">Task 8: Leap Years Interval</button>
+                    <button type="button" onclick="module1.task9()">Task 9: Prime Check</button>
+                    <button type="button" onclick="module1.task10()">Task 10: Dice Probability</button>
+                </div>
+
+                <h2>Module 2<span class="arrow">▶</span></h2>
+                <div class="module-buttons">
+                    <button type="button" onclick="module2.task1()">Task 1: Reverse Numbers</button>
+                    <button type="button" onclick="module2.task2()">Task 2: Participants Alphabetical</button>
+                    <button type="button" onclick="module2.task3()">Task 3: Dog Names Reverse Alphabetical</button>
+                    <button type="button" onclick="module2.task4()">Task 4: Numbers Until Zero Descending</button>
+                    <button type="button" onclick="module2.task5()">Task 5: Stop on Duplicate Ascending</button>
+                    <button type="button" onclick="module2.task6()">Task 6: Dice Roll Until 6</button>
+                    <button type="button" onclick="module2.task7()">Task 7: Dice Roll Until Max</button>
+                    <button type="button" onclick="module2.task8()">Task 8: Concat Array</button>
+                    <button type="button" onclick="module2.task9()">Task 9: Even Numbers</button>
+                    <button type="button" onclick="module2.task10()">Task 10: Voting Program</button>
+                </div>
+
+                <h2>Module 3<span class="arrow">▶</span></h2>
+                <div class="module-buttons">
+                    <button type="button" onclick="module3.task1()">Task 1: Add List Items</button>
+                    <button type="button" onclick="module3.task2()">Task 2: Add List Items via createElement</button>
+                    <button type="button" onclick="module3.task3()">Task 3: Names into List</button>
+                    <button type="button" onclick="module3.task4()">Task 4: Add Student Options</button> 
+                    <button type="button" onclick="module3.task5()">Task 5: Create Articles</button>
+                    <button type="button" onclick="module3.task6()">Task 6: Button Click Alert</button>
+                    <button type="button" onclick="module3.task7()">Task 7: Hover Image</button>
+                    <button type="button" onclick="module3.task8()">Task 8: Simple Calculator</button>
+                    <button type="button" onclick="module3.task9()">Task 9: Text Field Calculator</button>
+                    <button type="button" onclick="module3.task10()">Task 10: Form Name</button>
+                    <button type="button" onclick="module3.task11()">Task 11: Modal Images</button>
+                </div>
+
+                <h2>Module 4<span class="arrow">▶</span></h2>
+                <div class="module-buttons">
+                    <button type="button" onclick="module4.task1()">Task 1: TV Series Search (AJAX)</button>
+                    <button type="button" onclick="module4.task2()">Task 2: TV Series Search (Output)</button>
+                    <button type="button" onclick="module4.task3()">Task 3: TV Series Details (Articles)</button>
+                    <button type="button" onclick="module4.task4()">Task 4: TV Series Details with Default Image</button>
+                    <button type="button" onclick="module4.task5()">Task 5: Random Chuck Norris Joke</button>
+                    <button type="button" onclick="module4.task6()">Task 6: Search Chuck Norris Jokes</button>
+                </div>
+            </nav>
+
+            <section class="results-column" aria-label="Program Output">
+                <div class="output-header-row">
+                    <h3>Program Output</h3>
+                    <button type="button" id="clean-output-btn" title="Clears all dynamic content from the results panel" onclick="helperInstance.clearOutput()">Clear All</button>
+                </div>
+                
+                <div id="output" class="code-output-box">
+                    <div id="target" class="output-list-target"></div>
+                    <section id="pictures" class="output-article-target"></section> 
+                </div>
+
+                <dialog class="modal-viewer">
+                    <span class="modal-close-btn" aria-label="Close Modal">&#x2715;</span>
+                    <img src="" alt="Modal Image Viewer">
+                </dialog>
+            </section>
+        </main>
+
+        <script src="scripts/Helper.js"></script> 
+        <script src="scripts/Module_1.js"></script>
+        <script src="scripts/Module_2.js"></script>
+        <script src="scripts/Module_3.js"></script>
+        <script src="scripts/Module_4.js"></script>
+
+        <script>
+            const helperInstance = new Helper("output", "target", "pictures");
+            const module1 = new ModuleOneTasks(helperInstance);
+            const module2 = new ModuleTwoTasks(helperInstance);
+            const module3 = new ModuleThreeTasks(helperInstance);
+            const module4 = new ModuleFourTasks(helperInstance);
+        </script>
+    </body>
+</html>
